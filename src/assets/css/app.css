@@ -1,0 +1,13 @@
+button{
+    border: 0;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    box-shadow: 0 5px green;
+    cursor: pointer;
+  }
+  button:active{
+    box-shadow: 0 0px green, inset 0px 0px 30px rgba(0,0,0,.1);
+    transform: translate(0px, 5px);
+  }

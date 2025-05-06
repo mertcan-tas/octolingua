@@ -1,0 +1,1 @@
+from .email import SendVerificationEmailView, VerifyEmailAPIView

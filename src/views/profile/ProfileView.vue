@@ -1,21 +1,20 @@
 <template>
   <BaseLayout>
-  
+    {{ message }}
   </BaseLayout>
 </template>
 
 <script>
 export default {
-  name: 'MyComponent',
   data() {
     return {
-      message: 'Hello, Vue!'
+      message: "Hello, Vue!",
     };
   },
   methods: {
     sayHello() {
       console.log(this.message);
-    }
-  }
+    },
+  },
 };
 </script>

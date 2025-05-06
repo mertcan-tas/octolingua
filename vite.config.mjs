@@ -1,7 +1,6 @@
 import Components from 'unplugin-vue-components/vite'
 import Vue from '@vitejs/plugin-vue'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
-import ViteFonts from 'unplugin-fonts/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 import { defineConfig } from 'vite'
@@ -16,18 +15,10 @@ export default defineConfig({
     Vuetify(),
     Components({
       dirs: [
-        'src/assets/*',
-        'src/components/*',
+        'src/assets',
+        'src/components',
         'src/layouts'
       ],
-    }),
-    ViteFonts({
-      google: {
-        families: [{
-          name: 'Raleway',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
-      },
     }),
   ],
   optimizeDeps: {
@@ -53,6 +44,9 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
+      css: {
+        additionalData: `@import "@/assets/Lato/font.css";`
+      },
       sass: {
         api: 'modern-compiler',
       },

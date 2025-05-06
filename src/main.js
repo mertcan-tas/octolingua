@@ -1,11 +1,10 @@
 import { registerPlugins } from '@/plugins'
 
-import App from './App.vue'
-
-import "@/assets/css/app.css";
-import '@/assets/fonts/fonts.css';
+import App from '@/App.vue'
 
 import { createApp } from 'vue'
+
+import "@/assets/css/main.scss";
 
 const app = createApp(App)
 

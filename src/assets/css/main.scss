@@ -1,0 +1,46 @@
+
+$primary-font: "Quicksand", sans-serif;
+
+html,
+body, div {
+  font-family: $primary-font !important;
+}
+
+.v-application {
+  font-family: $primary-font !important;
+
+  .headline,
+  .title,
+  .subtitle-1,
+  .subtitle-2,
+  .body-1,
+  .body-2,
+  .caption,
+  .overline {
+    font-family: $primary-font !important;
+  }
+}
+
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.v-btn {
+  &:active {
+    border-bottom-width: 2px !important;
+    transition: transform 0.1s, border-bottom-width 0.1s !important;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    touch-action: manipulation;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+}
